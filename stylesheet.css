@@ -1,0 +1,224 @@
+body,
+html {
+    padding: 0;
+    margin: 0;
+    background-image: url(bilder/vivid-blurred-colorful-wallpaper-background_58702-3798.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+nav {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Detta är för navbar och footer*/
+nav,
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.511);
+}
+
+/* Detta är för rubrikern i footern ska bli blå, kanske går att lösa på annat sätt*/
+footer h4 {
+    color:cornflowerblue;
+}
+
+/* Detta är ul elementet i navbar o footer (behållaren)*/
+.nav-links,
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: center;
+    padding: 0;
+    gap: 1rem;
+}
+
+/* Detta är själva länkarna inuti ul elementet (själva länkarna)*/
+.nav-links a,
+.footer-links a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+/* Detta är när man hovrar över länkarna*/
+.nav-links a:hover,
+.footer-links a:hover {
+    padding: 0.5rem;
+    background-color:rgba(100, 148, 237, 0.534);
+    border-radius: 5px;
+}
+
+nav h3 {
+    animation-name: example;
+    animation-duration: 3s;
+    animation-iteration-count: 2;
+    animation-direction: alternate-reverse;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+@keyframes example {
+    from {background-color: cornflowerblue;}
+    to {background-color: rgba(255, 255, 255, 0.511);}
+  }
+
+
+/* Detta är första texten på alla sidor, gör om lite*/
+.intro,
+.profil {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Profilbilden styling*/
+.profil img{
+    width: 150px;
+    border-radius: 30px;
+    padding: 1rem;
+}
+
+/* Gör om?*/
+h2 {
+    color:cornflowerblue;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+}
+
+/* Produktkortet styling*/
+.project-card {
+    background-color: rgba(255, 255, 255, 0.42);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+/* Bilden till produkterna*/
+.project-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+
+
+/* Detta är för formuläret*/
+form,
+.om-mig {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 1rem;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.511);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+ 
+
+
+.form-items {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+    margin: 2rem auto;
+}
+
+
+
+/* Detta är för knappen*/
+button {
+    display: block;
+    margin: 1rem auto 1rem;
+    background-color: rgba(255, 255, 255, 0.42);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+
+button:hover {
+    border: none;
+    background-color:cornflowerblue;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+
+    .nav-links,
+    .footer-links {
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .project-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .project-card {
+        flex: 1 1 200px;
+    }
+
+    .form {
+        max-width: 600px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <title>Kontakt</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h3>Elins Portfolio</h3>
+        <ul class="nav-links">
+          <li><a href="index.html">Hem</a></li>
+          <li><a href="minprofil.html">Om mig</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="form-container">
+        <form>
+          <section class="intro">
+            <h3>Kontakta mig</h3>
+            <p>Fyll i formuläret!</p>
+          </section>
+          <section class="form-items">
+            <label for="fnamn">Förnamn:</label>
+            <input type="text" id="fnamn" name="fnamn" />
+            <label for="enamn">Efternamn:</label>
+            <input type="text" id="lnamn" name="lnamn" />
+            <label for="epost">Epostadress:</label>
+            <input type="text" id="epost" name="epost" />
+
+            <label for="amne">Ämne:</label>
+            <select id="amne" name="amne">
+              <option value="">--Välj en typ av förfrågan--</option>
+              <option value="sa">Samarbete</option>
+              <option value="fr">Frilansuppdrag</option>
+              <option value="al">Allmän fråga</option>
+              <option value="fe">Feedback om portfolion</option>
+            </select>
+
+            <label for="meddelande">Meddelande:</label>
+            <textarea
+              id="meddelande"
+              name="meddelande"
+              rows="5"
+              cols="30"
+            ></textarea>
+          </section>
+
+          <!--Lägg denna högre upp i formuläret-->
+        </form>
+      </div>
+      <button type="submit">Skicka formulär</button>
+    </main>
+
+    <footer>
+      <h4>Kontakt</h4>
+      <ul class="footer-links">
+        <li><a href="">elinmaijgren@gmail.com</a></li>
+        <li><a href="">Instagram</a></li>
+        <li><a href="">LinkedIn</a></li>
+        <li><a href="">Facebook</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>
